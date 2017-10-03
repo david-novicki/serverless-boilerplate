@@ -1,0 +1,39 @@
+{
+	"name": "serverless-boilerplate",
+	"version": "1.0.0",
+	"description": "Boilerplate framework for serverless service",
+	"scripts": {
+		"test": "eslint ./src && mocha tests/index.js",
+		"lint": "eslint ./src",
+		"build": "babel src --out-dir dist",
+		"start": "babel src --out-dir dist &&  sls offline start --skipCacheInvalidation",
+		"deploy": "babel src --out-dir dist &&  sls deploy -v",
+		"precommit": "npm run test",
+		"commitmsg": "validate-commit-msg"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/supercycle91/serverless-boilerplate.git"
+	},
+	"keywords": [
+		"serverless",
+		"boilerplate"
+	],
+	"author": "David Novicki",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/supercycle91/serverless-boilerplate/issues"
+	},
+	"homepage": "https://github.com/supercycle91/serverless-boilerplate#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.6.0",
+		"eslint": "^4.7.2",
+		"eslint-plugin-filenames": "^1.2.0",
+		"husky": "^0.14.3",
+		"mocha": "^3.4.2",
+		"serverless-offline": "^3.15.3",
+		"validate-commit-msg": "^2.14.0"
+	}
+}

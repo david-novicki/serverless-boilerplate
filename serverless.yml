@@ -1,0 +1,17 @@
+service: serverless-boilerplate
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-west-2
+
+functions:
+  hello:
+    handler: dist/handler.hello
+    description: Standard hello function
+    # events:
+    #   - http:
+    #       path: articles/{userID}
+    #       method: get
+    #       cors: true
+    #       authorizor: ::::lambda-func
