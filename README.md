@@ -41,5 +41,20 @@ rm -rf .git && git init
 git remote add origin [new url]
 `
 
+## Packages
+
+[validate-commit-msg](https://www.npmjs.com/package/validate-commit-msg) uses github hooks to only allow specific format of git commit messages
+
+[husky](https://github.com/typicode/husky) is a library for git hook integration
+
+[babel](https://github.com/babel/babel) transpiler
+
+[eslint](https://github.com/eslint/eslint) is our JS linter
+
+[mocha](https://github.com/mochajs/mocha) testing framework
+
+[serverless-offline](https://github.com/dherault/serverless-offline) development testing utility
+
+
 
 
