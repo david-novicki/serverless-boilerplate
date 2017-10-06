@@ -11,20 +11,12 @@
 		"precommit": "npm run test",
 		"commitmsg": "validate-commit-msg"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/supercycle91/serverless-boilerplate.git"
-	},
 	"keywords": [
 		"serverless",
 		"boilerplate"
 	],
 	"author": "David Novicki",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/supercycle91/serverless-boilerplate/issues"
-	},
-	"homepage": "https://github.com/supercycle91/serverless-boilerplate#readme",
 	"dependencies": {},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
